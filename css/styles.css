@@ -1,0 +1,46 @@
+:root {
+  --color-primario: #1F3864;
+  --color-secundario: #2E75B6;
+  --color-acento: #C9A227;
+  --color-texto: #222222;
+  --color-fondo: #FFFFFF;
+  --fuente-titulos: 'Georgia', serif;
+  --fuente-texto: 'Segoe UI', sans-serif;
+}
+ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
+}
+.hero {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+ 
+.btn-primario {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: var(--color-acento);
+  color: var(--color-primario);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .navbar { display: none; }
+  .navbar.navbar-abierta { display: flex; flex-direction: column; }
+  .menu-toggle { display: block; }
+}
+ 
+@media (min-width: 769px) {
+  .menu-toggle { display: none; }
+}

@@ -7,13 +7,67 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header id="header"></header>
+ <header class="site-header">
+  <div class="logo">IEALP</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <button>Primaria ▾</button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Transición</a></li>
+          <li><a href="#">Primero</a></li>
+          <li><a href="#">Segundo</a></li>
+          <li><a href="#">Tercero</a></li>
+          <li><a href="#">Cuarto</a></li>
+          <li><a href="#">Quinto</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <button>Bachillerato ▾</button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Sexto</a></li>
+          <li><a href="#">Séptimo</a></li>
+          <li><a href="#">Octavo</a></li>
+          <li><a href="#">Noveno</a></li>
+          <li><a href="#">Décimo</a></li>
+          <li><a href="#">Once</a></li>
+        </ul>
+      </li>
+      <li><a href="pages/destacados.html">Reconocimientos</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle">☰</button>
+</header>
+
  
   <main>
-    <section id="hero"></section>
+    <section id="hero" class="hero">
+  <div class="hero-contenido">
+    <h1>Institución Educativa Alfonso López Pumarejo</h1>
+    <p>Formando con excelencia académica y valores desde la niñez hasta el bachillerato.</p>
+    <a href="#mision-vision" class="btn-primario">Conoce nuestra institución</a>
+  </div>
+</section>
+
   </main>
- 
-  <footer id="footer"></footer>
+ <section id="mision-vision" class="mision-vision">
+  <div>
+    <h2>Misión</h2>
+    <p>Texto de la misión institucional del IEALP.</p>
+  </div>
+  <div>
+    <h2>Visión</h2>
+    <p>Texto de la visión institucional del IEALP.</p>
+  </div>
+</section>
+
+  <footer class="site-footer">
+  <p>Institución Educativa Alfonso López Pumarejo</p>
+  <p>Dirección · Teléfono · Correo de contacto</p>
+  <p>&copy; 2026 IEALP. Todos los derechos reservados.</p>
+</footer>
+
  
   <script src="js/main.js"></script>
 </body>
