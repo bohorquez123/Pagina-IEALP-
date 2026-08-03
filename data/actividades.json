@@ -1,5 +1,38 @@
 [
-  { "nombre": "Afrocolombianidad", "descripcion": "...", "imagen": "afro.jpg" },
-  { "nombre": "Feria Gastronómica", "descripcion": "...", "imagen": "feria.jpg" },
-  { "nombre": "English Day", "descripcion": "...", "imagen": "englishday.jpg" }
+  {
+    "nombre": "Afrocolombianidad",
+    "descripcion": "Celebración de la cultura y el aporte afrocolombiano a la identidad nacional.",
+    "imagen": "assets/img/afrocolombianidad.jpg",
+    "mes": "mayo"
+  },
+  {
+    "nombre": "Feria Gastronómica",
+    "descripcion": "Muestra de platos típicos preparados por estudiantes y familias de la institución.",
+    "imagen": "assets/img/dia-del-idioma.jpg",
+    "mes": "septiembre"
+  },
+  {
+    "nombre": "English Day",
+    "descripcion": "Jornada de actividades e inmersión en inglés para todos los grados.",
+    "imagen": "assets/img/english day.jpeg",
+    "mes": "octubre"
+  },
+  {
+    "nombre": "Día del Idioma",
+    "descripcion": "Conmemoración del idioma español con actividades literarias y culturales.",
+    "imagen": "assets/img/dia-del-idioma.jpg",
+    "mes": "abril"
+  },
+  {
+    "nombre": "Peinados Locos",
+    "descripcion": "Jornada lúdica donde los estudiantes participan con peinados creativos.",
+    "imagen": "assets/img/peinados-locos.jpg",
+    "mes": "junio"
+  },
+  {
+    "nombre": "Día del Agua",
+    "descripcion": "Actividades de sensibilización ambiental sobre el cuidado del agua.",
+    "imagen": "assets/img/dia-del-agua.jpg",
+    "mes": "marzo"
+  }
 ]

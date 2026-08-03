@@ -68,3 +68,45 @@ function pintarBreadcrumbs(nivel, grado, materia) {
     <span>${capitalizar(materia.replace('-', ' '))}</span>
   `
 }
+async function cargarActividades() {
+  const respuesta = await fetch('data/actividades.json')
+  return respuesta.json()
+}
+ 
+function crearTarjeta(actividad) {
+  const div = document.createElement('div')
+  div.className = 'tarjeta-actividad'
+  div.innerHTML = `
+    <img src="assets/img/${actividad.imagen}" alt="${actividad.nombre}">
+    <div class="contenido">
+      <h3>${actividad.nombre}</h3>
+      <p>${actividad.descripcion}</p>
+    </div>
+  `
+  return div
+}
+ 
+cargarActividades().then((actividades) => {
+  const galeria = document.getElementById('galeria-actividades')
+  actividades.forEach((actividad) => {
+    galeria.appendChild(crearTarjeta(actividad))
+  })
+})
+if (materia === 'educacion-fisica') {
+  const seccionJuegos = document.createElement('div')
+  seccionJuegos.className = 'seccion-juegos'
+  seccionJuegos.innerHTML = `
+    <h2>Juegos Intramurales e Intercolegiados</h2>
+    <div class="juegos-grid">
+      <div class="juego-card">
+        <h3>Juegos Intramurales</h3>
+        <p>Competencias deportivas internas entre grados de la institución.</p>
+      </div>
+      <div class="juego-card">
+        <h3>Juegos Intercolegiados</h3>
+        <p>Competencias deportivas representando al colegio frente a otras instituciones.</p>
+      </div>
+    </div>
+  `
+  document.getElementById('materia-detalle').appendChild(seccionJuegos)
+}

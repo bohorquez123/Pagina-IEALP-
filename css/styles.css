@@ -35,6 +35,35 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.galeria-actividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 20px;
+}
+ 
+.tarjeta-actividad {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: white;
+}
+ 
+.tarjeta-actividad img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+ 
+.tarjeta-actividad .contenido {
+  padding: 16px;
+}
+ 
+.tarjeta-actividad h3 {
+  color: var(--color-primario);
+  margin-bottom: 8px;
+}
+
 @media (max-width: 768px) {
   .navbar { display: none; }
   .navbar.navbar-abierta { display: flex; flex-direction: column; }
@@ -43,4 +72,18 @@ body {
  
 @media (min-width: 769px) {
   .menu-toggle { display: none; }
+}
+@media (max-width: 1024px) {
+  .galeria-actividades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ 
+@media (max-width: 600px) {
+  .galeria-actividades {
+    grid-template-columns: 1fr;
+  }
+  .juegos-grid {
+    grid-template-columns: 1fr;
+  }
 }
