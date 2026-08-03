@@ -1,0 +1,16 @@
+[
+  {
+    "nivel": "primaria",
+    "grado": "quinto",
+    "materia": "Matemáticas",
+    "docente": "Nombre del Docente",
+    "info": "Breve descripción o formación del docente"
+  },
+  {
+    "nivel": "bachillerato",
+    "grado": "decimo",
+    "materia": "Trigonometría",
+    "docente": "Nombre del Docente",
+    "info": "Breve descripción o formación del docente"
+  }
+]
